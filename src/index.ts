@@ -17,7 +17,7 @@ app.use("/countries", countryRoutes);
 
 app.post('/feishu', async (req, res) => {
   console.log(req.body);
-  res.json({ code: 200 });
+  res.json({ challenge: req.body.challenge });
 })
 
 app.listen(port, () => {
